@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Xamarin101;assembly=Xamarin101"
+             x:Class="Xamarin101.TapMeButtonPage">
+
+    <ContentPage.BindingContext>
+        <local:TapMeButtonViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+
+        <Button
+            Text="{Binding ButtonText}"
+            Command="{Binding TapMeCommand}"
+            FontSize="20"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"/>
+
+    </ContentPage.Content>
+</ContentPage>
